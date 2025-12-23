@@ -1,147 +1,193 @@
 <!DOCTYPE html>
+<!-- Define o documento como HTML5 -->
+
 <html lang="pt-br">
+<!-- Início do HTML e definição do idioma como português do Brasil -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>The Dev News</title>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres para UTF-8 (acentos e símbolos) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permite que o site seja responsivo em celulares e tablets -->
+
+    <title>The Dev News</title>
+    <!-- Título exibido na aba do navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa o arquivo CSS externo -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Importa fontes do Google Fonts -->
 </head>
 
 <body>
-  <header>
-    <h1>The Dev News</h1>
-  </header>
-  <main>
-    <!--seção inicial de banner e sidebar-->
-    <section>
-      <div class="bannerPrincipal">
-        <div class="textoBannerPrincipal">
-          <p>opnião</p>
-          <h4>Como é ser um desenvolvedor</h4>
-          <p><span>By</span> Fabio Tetsuo</p>
+<!-- Corpo do site -->
+
+    <header class="main-header">
+        <!-- Cabeçalho principal do site -->
+        <div class="container">
+            <!-- Container para centralizar o conteúdo -->
+            <h1>The Dev News</h1>
+            <!-- Nome do site -->
         </div>
-      </div>
-      <div class="postsPopulares">
-        <h4>Posts populares</h4>
-        <div class="cards">
-          <div>
-            <img src="images/desenvolvimentoAtual.svg" alt="pessoa trabalhando em computadores">
-          </div>
-          <div>
-            <p id="title-Cards">Desenvolvimento atual</p>
-            <p id="date-cards">22 de agosto 2022</p>
-          </div>
-        </div>
-        <div class="cards">
-          <div>
-            <img src="images/gitlabVSGuithub.svg" alt="logomarca do GitLab">
-          </div>
-          <div>
-            <p id="title-Cards">GitLab vs GitHub</p>
-            <p id="date-cards">22 de agosto 2022</p>
-          </div>
-        </div>
-        <div class="cards">
-          <div>
-            <img src="images/cafeAtrapalha.svg" alt="notebook com xicara de café">
-          </div>
-          <div>
-            <p id="title-Cards">Café atrapalha?</p>
-            <p id="date-cards">22 de agosto 2022</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  <!--seção de post mais recentes-->
-    <section>
-      <div class="conteinner"> 
-        <div id="tituloPostsMaisRecentes">
-          <h4>Posts mais recentes</h4>
-          <a href="">Ver todos</a>
-        </div>
-        <!--post mais recentes-->
-        <div class="postsMaisRecentes">
-          <div class="posts">
-            <img src="images/desenvolvimentoMobile.svg" alt="celular sobre uma mesa">
-          <p id="postCategoria">desenvolvimento</p>
-          <h4>Desenvolvimento Mobile</h4>
-          <p id="autorPosts"> <span>By</span> Favio Tetsuo</p>
-          <p id="textPosts">
-            Lorem ipsum dolor sit amet consectetur. In
-            vitae urna commodo amet congue integer 
-            dapibus. Interdum semper mauris convallis
-            fusce enim odio. Vitae montes ri id="textPosts"diculus felis.
-            </p>
-            <p id="datePosts" >22 Agosto 2022</p>
-          </div>
-          <div class="posts">
-            <img src="images/vidaProfissionalPessoal.svg" alt="pessoa gravando video">
-          <p id="postCategoria">saude</p>
-          <h4>Balancear vida profissional e vida pessoal</h4>
-          <p id="autorPosts"> <span>By</span> Ridho Satriawan</p>
-          <p id="textPosts">
-            Lorem ipsum dolor sit amet consectetur. Et 
-            consectetur at consectetur sed nisl tempor.
-          </p>
-          <p id="datePosts" >22 Agosto 2022</p>
-          </div>
-          <div class="posts">
-            <img src="images/configurandoVScode.svg" alt="notebook com codigos computacionais">
-          <p id="postCategoria">desenvolvimento</p>
-          <h4>Configurando VSCode</h4>
-          <p id="autorPosts"> <span>By</span> Fabio Tetsuo</p>
-          <p id="textPosts">
-            Lorem ipsum dolor sit amet consectetur. Erat 
-            interdum tortor ac sagittis id a etiam. Tellus 
-            vitae arcu dignissim massa aliquam vel tellus. 
-            Ipsum massa arcu nulla sed purus in ac.
-          </p>
-          <p id="datePosts" >22 Agosto 2022</p>
-          </div>
-          <div class="posts">
-            <img src="images/monitorUltrawide.svg" alt="pessoa frente a varios monitores">
-          <p id="postCategoria">desenvolvimento</p>
-          <h4>Configurando VSCode</h4>
-          <p id="autorPosts"> <span>By</span> Fulano da Silva</p>
-          <p id="textPosts">
-            Lorem ipsum dolor sit amet consectetur. Arcu 
-            tellus adipiscing sagittis tristique. Eget 
-            molestie posuere enim pretium venenatis 
-            nunc ligula donec a. Velit senectus amet nulla.
-          </p>
-          <p id="datePosts" >22 Agosto 2022</p>
-          </div>
-        </div>
+    </header>
+
+    <div class="container layout-grid">
+        <!-- Container principal com layout em grid -->
+
+        <main class="main-content">
+            <!-- Conteúdo principal da página -->
+
+            <article class="featured-post">
+                <!-- Post em destaque -->
+                <img src="images/bannerPrincipal.jpg" alt="Cidade">
+                <!-- Imagem do post em destaque -->
+
+                <div class="featured-content">
+                    <!-- Conteúdo textual do post -->
+                    <span class="category-tag-hero">opinião</span>
+                    <!-- Categoria do post -->
+                    <h2>Como é ser um desenvolvedor</h2>
+                    <!-- Título do post -->
+                    <p class="meta">By Fabio Tetsuo</p>
+                    <!-- Autor -->
+                </div>
+            </article>
+
+            <section class="recent-posts">
+                <!-- Seção de posts recentes -->
+
+                <div class="section-header">
+                    <!-- Cabeçalho da seção -->
+                    <h3>Posts mais recentes</h3>
+                    <a href="#" class="view-all">Ver todos</a>
+                    <!-- Link para todos os posts -->
+                </div>
+
+                <div class="posts-grid">
+                    <!-- Grid de cards de posts -->
+
+                    <article class="post-card">
+                        <!-- Card de post -->
+                        <img src="images/desenvolvimentoMobile.svg" alt="Mobile">
+                        <!-- Imagem do post -->
+                        <div class="card-body">
+                            <!-- Corpo do card -->
+                            <span class="category">desenvolvimento</span>
+                            <!-- Categoria -->
+                            <h4>Desenvolvimento mobile</h4>
+                            <!-- Título -->
+                            <p class="meta">By Fabio Tetsuo</p>
+                            <!-- Autor -->
+                            <p class="excerpt">Resumo do texto sobre mobile...</p>
+                            <!-- Resumo -->
+                            <span class="date">22 Agosto 2022</span>
+                            <!-- Data -->
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <img src="images/vidaProfissionalPessoal.svg" alt="Vida">
+                        <div class="card-body">
+                            <span class="category">saude</span>
+                            <h4>Balancear vida profissional e pessoal</h4>
+                            <p class="meta">By Ridho Satriawan</p>
+                            <p class="excerpt">Resumo do texto sobre saúde...</p>
+                            <span class="date">22 Agosto 2022</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <img src="images/configurandoVScode.svg" alt="Código">
+                        <div class="card-body">
+                            <span class="category">desenvolvimento</span>
+                            <h4>Configurando VSCode</h4>
+                            <p class="meta">By Fabio Tetsuo</p>
+                            <p class="excerpt">Dicas para configurar seu editor...</p>
+                            <span class="date">22 Agosto 2022</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <img src="images/monitorUltrawide.svg" alt="Telas">
+                        <div class="card-body">
+                            <span class="category">produtividade</span>
+                            <h4>2 monitores ou 1 ultrawide?</h4>
+                            <p class="meta">By Fulano da Silva</p>
+                            <p class="excerpt">Qual o melhor setup para dev...</p>
+                            <span class="date">22 Agosto 2022</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <!-- Barra lateral -->
+
+            <div class="widget">
+                <!-- Widget de posts populares -->
+                <div class="widget-header">
+                    <h3>Posts populares</h3>
+                </div>
+
+                <div class="widget-content popular-list">
+                    <!-- Lista de posts populares -->
+
+                    <div class="mini-card">
+                        <!-- Card pequeno -->
+                        <img src="images/desenvolvimentoAtual.svg" alt="Dev">
+                        <div class="mini-info">
+                            <h5>Desenvolvimento atual</h5>
+                            <span class="date">22 Agosto 2022</span>
+                        </div>
+                    </div>
+
+                    <div class="mini-card">
+                        <img src="images/gitlabVSGuithub.svg" alt="Git">
+                        <div class="mini-info">
+                            <h5>GitLab vs GitHub</h5>
+                            <span class="date">22 Agosto 2022</span>
+                        </div>
+                    </div>
+
+                    <div class="mini-card">
+                        <img src="images/cafeAtrapalha.svg" alt="Café">
+                        <div class="mini-info">
+                            <h5>Café atrapalha?</h5>
+                            <span class="date">22 Agosto 2022</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="widget">
+                <!-- Widget de categorias -->
+                <div class="widget-header">
+                    <h3>Categorias</h3>
+                </div>
+
+                <div class="widget-content">
+                    <ul class="category-list">
+                        <!-- Lista de categorias -->
+                        <li><a href="#">> saude</a> <span>(1)</span></li>
+                        <li><a href="#">> desenvolvimento</a> <span>(2)</span></li>
+                        <li><a href="#">> produtividade</a> <span>(2)</span></li>
+                        <li><a href="#">> opiniao</a> <span>(1)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
     </div>
-    <!--div de categorias de posts-->
-      <div class="categoriasPosts">
-        <h4>Categorias</h4>
-        <ul>
-          <li>
-            <p>> saúde</p>
-            <p>(1)</p>
-          </li>
-          <li>
-            <p>> desenvolvimento</p>
-            <p>(2)</p>
-          </li>
-          <li>
-            <p>> produtividade</p>
-            <p>(2)</p>
-          </li>
-          <li>
-            <p>> opnião</p>
-            <p>(1)</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer>Copyright@The Dev News</footer>
+
+    <footer class="main-footer">
+        <!-- Rodapé -->
+        <p>Copyright @ The Dev News</p>
+    </footer>
+
 </body>
 </html>
